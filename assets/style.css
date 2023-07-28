@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary_Color: #f0f0f0;
+    --secondary_Color: #cb3931;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header .container .text {
+    display: flex;
+    align-items: center;
+}
+
+header .container .text p {
+    font-size: 16px;
+    max-width: 100%;
+    width: 400px;
+    color: var(--secondary_Color);
+}
+
+header .container .profileImage {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: var(--secondary_Color);
+}
+
+header .container .profileImage img {
+    width: 400px;
+}
+
+section .personInformation {
+    width: calc(100% - 180px);
+    margin-top: -100px;
+    margin-left: 180px;
+    background-color: var(--primary_Color);
+    padding-top: 250px;
+    padding-bottom: 80px;
+    z-index: -1;
+}
+
+section .personInformation .name {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+section .personInformation .name h1 {
+    font-size: 120px;
+    font-weight: 700;
+}
+
+section .personInformation .name .contact {
+    position: absolute;
+    right: 350px;
+    bottom: 60px;
+    left: 490px;
+}
+
+section .personInformation .name .contact p,
+section .personInformation .name .contact p a {
+    text-decoration: none;
+    color: var(--secondary_Color);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+section .personInformation .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .personInformation .links h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--secondary_Color);
+}
+
+section .personInformation .links .socialmedia {
+    display: flex;
+    gap: 40px;
+}
+
+section .personInformation .links .socialmedia a {
+    text-decoration: none;
+    color: black;
+}
+
+section .personInformation .links .socialmedia i {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Skills .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--secondary_Color);
+}
+
+.design {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.design p:first-of-type {
+    color: var(--secondary_Color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.design p:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 600;
+}
