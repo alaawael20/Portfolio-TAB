@@ -92,21 +92,20 @@ section .personInformation .name {
 
 section .personInformation .name h1 {
     font-size: 120px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 section .personInformation .name .contact {
     position: absolute;
-    right: 350px;
-    bottom: 60px;
-    left: 490px;
+    right: 280px;
+    top: 60px;
 }
 
 section .personInformation .name .contact p,
 section .personInformation .name .contact p a {
     text-decoration: none;
     color: var(--secondary_Color);
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 500;
 }
 
